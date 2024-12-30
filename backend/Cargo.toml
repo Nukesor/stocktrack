@@ -1,0 +1,20 @@
+[package]
+name = "stocktrack"
+description = "A tracking app for your personal household stock."
+authors = ["Arne Beer <contact@arne.beer>"]
+edition = "2021"
+homepage = "https://github.com/nukesor/pueue"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/nukesor/pueue"
+rust-version = "1.70"
+
+[dependencies]
+axum = "0.8.0-rc.1"
+tracing = "0.1.37"
+serde = { version = "1.0.163", features = ["derive"] }
+serde_json = "1.0.96"
+tracing-subscriber = "0.3.17"
+tokio = { version = "1.29.1", features = ["full"] }
+diesel = { version = "2.1.0", features = ["postgres", "chrono", "r2d2"] }
+dotenv = "0.15"
+chrono = { version = "0.4.26", features = ["serde"] }
