@@ -9,6 +9,7 @@ mod backend;
 mod models;
 mod routes;
 mod schema;
+mod storage;
 
 #[derive(Clone)]
 pub struct AppState {
